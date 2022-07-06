@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="152" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="MyWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="152"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="152"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0BQ-XI-aUx">
+                        <rect key="frame" x="0.0" y="0.0" width="165" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="165" id="4UT-OC-iL8"/>
+                            <constraint firstAttribute="height" constant="120" id="MLw-Ha-oMv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4W-L7-gf7">
+                        <rect key="frame" x="173" y="15" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acv-L5-t10">
+                        <rect key="frame" x="173" y="66" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baH-Px-6UA">
+                        <rect key="frame" x="61" y="128" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Acv-L5-t10" firstAttribute="top" secondItem="y4W-L7-gf7" secondAttribute="bottom" constant="30" id="4u7-3p-NaD"/>
+                    <constraint firstItem="baH-Px-6UA" firstAttribute="centerX" secondItem="0BQ-XI-aUx" secondAttribute="centerX" id="89B-qN-hXb"/>
+                    <constraint firstItem="Acv-L5-t10" firstAttribute="leading" secondItem="0BQ-XI-aUx" secondAttribute="trailing" constant="8" symbolic="YES" id="GuY-o2-6d8"/>
+                    <constraint firstItem="0BQ-XI-aUx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="H3I-7d-ndC"/>
+                    <constraint firstItem="0BQ-XI-aUx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HBo-I5-YvL"/>
+                    <constraint firstItem="y4W-L7-gf7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="PfL-6O-kaT"/>
+                    <constraint firstItem="baH-Px-6UA" firstAttribute="top" secondItem="0BQ-XI-aUx" secondAttribute="bottom" constant="11" id="YRb-0F-zok"/>
+                    <constraint firstItem="y4W-L7-gf7" firstAttribute="leading" secondItem="0BQ-XI-aUx" secondAttribute="trailing" constant="8" symbolic="YES" id="sg9-kE-OMN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="citylabel" destination="baH-Px-6UA" id="bpF-Kz-4DJ"/>
+                <outlet property="fellsLikeLabel" destination="Acv-L5-t10" id="85X-Kf-5Cd"/>
+                <outlet property="imageView" destination="0BQ-XI-aUx" id="BOx-Yl-vkT"/>
+                <outlet property="tempLabel" destination="y4W-L7-gf7" id="o8l-Wy-oqQ"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="114.50892857142857"/>
+        </tableViewCell>
+    </objects>
+</document>
