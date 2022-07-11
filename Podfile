@@ -8,5 +8,6 @@ target 'MyWeather' do
   # Pods for MyWeather
 
 pod 'SnapKit'
+pod 'Alamofire'
 
 end
