@@ -1,7 +1,6 @@
 //
 //  SceneDelegate.swift
-//  MyWeather
-//
+//  DesignPatterns
 //  Created by Валентина Евдокимова on 02.07.2022.
 //
 
