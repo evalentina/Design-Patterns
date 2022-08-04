@@ -11,5 +11,19 @@ import Foundation
 let data = Data.shared
 
 
+//MARK: Prototype
+let prototype = Person(name: "Student")
+
+var student = prototype.clone()
+//student.age = 20
+
+var retiree = prototype.clone()
+//retiree.age = 65
+
+
+
+
+
+
 
 
