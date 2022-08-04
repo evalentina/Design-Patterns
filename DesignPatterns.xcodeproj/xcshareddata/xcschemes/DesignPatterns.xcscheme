@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C836913D2870156B00BBA1CE"
-               BuildableName = "MyWeather.app"
+               BuildableName = "DesignPatterns.app"
                BlueprintName = "DesignPatterns"
                ReferencedContainer = "container:DesignPatterns.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C836913D2870156B00BBA1CE"
-            BuildableName = "MyWeather.app"
+            BuildableName = "DesignPatterns.app"
             BlueprintName = "DesignPatterns"
             ReferencedContainer = "container:DesignPatterns.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C836913D2870156B00BBA1CE"
-            BuildableName = "MyWeather.app"
+            BuildableName = "DesignPatterns.app"
             BlueprintName = "DesignPatterns"
             ReferencedContainer = "container:DesignPatterns.xcodeproj">
          </BuildableReference>
