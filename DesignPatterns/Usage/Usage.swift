@@ -10,7 +10,6 @@ import Foundation
 // MARK: Singleton
 let data = Data.shared
 
-
 //MARK: Prototype
 let prototype = Person(name: "Student")
 
