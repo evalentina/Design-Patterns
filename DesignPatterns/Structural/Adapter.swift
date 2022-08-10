@@ -28,7 +28,7 @@ class Temperature {
     }
 }
 
-class CelsiusThermometer {
+class CelsiusThermometer : Celsius {
     var celsius : Double
     
     init(celsius : Double) {
@@ -46,7 +46,7 @@ class FahrenheitThermometer {
 
 class Adapter : Celsius {
     var celsius: Double {
-        return (target.fahrenheit - 32)/1.8
+        return round(target.fahrenheit - 32)/1.8
     }
     private let target : FahrenheitThermometer
     

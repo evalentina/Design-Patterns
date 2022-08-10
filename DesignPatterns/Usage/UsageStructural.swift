@@ -13,6 +13,21 @@ let espresso = Espresso()
 let capuccino = Milk(сoffee: espresso)
 let capuccinoWithSyrup = Syrup(сoffee: capuccino)
 
+// MARK: Adapter
+
+let celsius = CelsiusThermometer(celsius: 24)
+let firstTemp = Temperature(thermometer: celsius)
+let fahrenheit = FahrenheitThermometer(fahrenheit: 75)
+let secondTemp = Temperature(thermometer: Adapter(target: fahrenheit))
+//firstTemp.weather()
+//secondTemp.weather()
+
+
+
+
+
+
+
 
 
 
