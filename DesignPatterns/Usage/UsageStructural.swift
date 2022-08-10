@@ -22,6 +22,14 @@ let secondTemp = Temperature(thermometer: Adapter(target: fahrenheit))
 //firstTemp.weather()
 //secondTemp.weather()
 
+// MARK: Proxy
+
+let lock = ProxyLock()
+//lock.open()
+
+
+
+
 
 
 
