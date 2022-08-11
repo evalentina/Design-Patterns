@@ -27,6 +27,15 @@ let secondTemp = Temperature(thermometer: Adapter(target: fahrenheit))
 let lock = ProxyLock()
 //lock.open()
 
+// MARK: Bridge
+
+let tvRemoteControl = RemoteControl(appliance: TV())
+let teapotRemoteControl = RemoteControl(appliance: Teapot())
+//tvRemoteControl.turnOn()
+//teapotRemoteControl.turnOn()
+
+
+
 
 
 
