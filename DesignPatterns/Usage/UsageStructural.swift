@@ -34,6 +34,10 @@ let teapotRemoteControl = RemoteControl(appliance: Teapot())
 //tvRemoteControl.turnOn()
 //teapotRemoteControl.turnOn()
 
+// MARK: Composite
+var whiteboard = Whiteboard([Circle(), Square()])
+//whiteboard.draw(fillColor: "Blue")
+
 
 
 
