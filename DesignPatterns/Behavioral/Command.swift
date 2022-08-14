@@ -8,12 +8,12 @@
 import Foundation
 
 protocol DoorExecute {
-    var doorName:String {get set}
+    var doorName: String {get set}
     func execute()
 }
 
 
-class DoorOpen: DoorExecute {
+final class DoorOpen: DoorExecute {
     
     var doorName: String
     
@@ -27,7 +27,7 @@ class DoorOpen: DoorExecute {
     
 }
 
-class DoorClose: DoorExecute {
+final class DoorClose: DoorExecute {
     
     var doorName: String
     
@@ -41,10 +41,10 @@ class DoorClose: DoorExecute {
     
 }
 
-class Door {
+final class Door {
     
-    private var doorOpen:DoorExecute
-    private var doorClose:DoorExecute
+    private var doorOpen: DoorExecute
+    private var doorClose: DoorExecute
 
     init(doorName: String) {
         doorOpen = DoorOpen(doorName: doorName)

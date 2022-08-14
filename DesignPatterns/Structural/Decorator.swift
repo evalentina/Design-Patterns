@@ -29,7 +29,7 @@ class CoffeDecorator: Coffee {
     }
 }
 
-final class Espresso : Coffee {
+final class Espresso: Coffee {
     func cost() -> Int {
         return 100
     }
@@ -50,7 +50,7 @@ final class Milk: CoffeDecorator {
     }
 }
 
-final class DoubleCoffee : CoffeDecorator {
+final class DoubleCoffee: CoffeDecorator {
     
     override func cost() -> Int {
         return super.cost() + 50

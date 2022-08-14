@@ -11,10 +11,10 @@ protocol Celsius {
     var celsius : Double { get }
 }
 
-class Temperature {
-    var thermometer : Celsius
+final class Temperature {
+    var thermometer: Celsius
     
-    init(thermometer : Celsius) {
+    init(thermometer: Celsius) {
         self.thermometer = thermometer
     }
     
@@ -28,29 +28,29 @@ class Temperature {
     }
 }
 
-class CelsiusThermometer : Celsius {
-    var celsius : Double
+final class CelsiusThermometer: Celsius {
+    var celsius: Double
     
-    init(celsius : Double) {
+    init(celsius: Double) {
         self.celsius = celsius
     }
 }
 
-class FahrenheitThermometer {
-    var fahrenheit : Double
+final class FahrenheitThermometer {
+    var fahrenheit: Double
     
     init(fahrenheit: Double) {
         self.fahrenheit = fahrenheit
     }
 }
 
-class Adapter : Celsius {
+final class Adapter: Celsius {
     var celsius: Double {
         return round(target.fahrenheit - 32)/1.8
     }
-    private let target : FahrenheitThermometer
+    private let target: FahrenheitThermometer
     
-    init(target : FahrenheitThermometer) {
+    init(target: FahrenheitThermometer) {
         self.target = target
     }
 }
