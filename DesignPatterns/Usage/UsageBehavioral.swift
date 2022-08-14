@@ -13,3 +13,13 @@ let door = Door(doorName: "FirstDoor")
 //door.close()
 
 
+// MARK: Iterator
+let human = HumanAggregate()
+
+//human.add(Human(name: "Eva", lastName: "Semenova"))
+//human.add(Human(name: "Anna", lastName: "Ivanova"))
+//human.add(Human(name: "Andrey", lastName: "Grigoriev"))
+
+let makeIterator = human.getIterator()
+
+
