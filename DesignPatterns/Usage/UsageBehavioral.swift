@@ -24,9 +24,14 @@ let makeIterator = human.getIterator()
 
 // MARK: Iterator
 var mathSort = Math(sorted: BubbleSort())
+
 //mathSort.sort([1,2,3])
 //mathSort = Math(MergeSort())
 //mathSort.sort([4,5,6,7,8])
+
+
+
+
 
 
 
