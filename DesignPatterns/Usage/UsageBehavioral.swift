@@ -22,12 +22,18 @@ let human = HumanAggregate()
 
 let makeIterator = human.getIterator()
 
-// MARK: Iterator
+// MARK: Strategy
 var mathSort = Math(sorted: BubbleSort())
 
 //mathSort.sort([1,2,3])
 //mathSort = Math(MergeSort())
 //mathSort.sort([4,5,6,7,8])
+
+// MARK: Template Method
+let file = FileEdit()
+
+//file.editFile()
+
 
 
 
